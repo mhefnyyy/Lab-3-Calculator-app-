@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #c3b5fd, #fbc2eb);
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  width: 300px;
+  padding: 20px;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin: 0 0 15px;
+  font-size: 20px;
+  text-align: center;
+  color: #6d28d9;
+}
+
+#display {
+  background: #f3f0ff;
+  color: #333;
+  font-size: 40px;
+  text-align: right;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* 4 buttons in each row */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  font-size: 22px;
+  background: #ede9fe;
+  color: #333;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* button moves down a little when clicked */
+button:active {
+  transform: scale(0.95);
+}
+
+.gray   { background: #d4d4d8; }
+.purple { background: #8b5cf6; color: white; }
+.pink   { background: #ec4899; color: white; }
+
+/* = button takes 2 spaces */
+.wide {
+  grid-column: span 2;
+}
